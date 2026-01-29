@@ -33,4 +33,9 @@ class Smartphone(Producte):
     def __str__(self):
         return f"PORTÀTIL:{self.nom} | ramGB {self.ram} | {self.cpu}"
 
+<<<<<<< HEAD
 class CarretCompra:
+=======
+class CarretCompra:
+'''
+>>>>>>> d01fe0abf41403308439a6156d2e0f7a732f5396
