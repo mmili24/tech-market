@@ -10,5 +10,5 @@ class Producte(ABC):
         return self.__preu
 
     def get_preu_web(self):
-        self.__preu * 1.21
+        preu_web = self.__preu * 1.21
         return preu_web

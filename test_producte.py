@@ -13,3 +13,6 @@ class TestProducte(unittest.TestCase):
         message_ko = '❌ Error: No hi ha prou stock de a'
         self.assertEqual(producte.vendre(1), message_ok)
         self.assertEqual(producte.vendre(1), message_ko)
+        
+if __name__ == '__main__':
+    unittest.main()
