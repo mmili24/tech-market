@@ -13,21 +13,3 @@ mostrem ho hem de fer amb l'IVA (21%) aplicat.
 
 Si al vendre un producte no hi ha prou stock, s'ha de llançar un error o avisar 
 del mateix.'''
-
-
-
-# if stock < 0 
-# return f"Stock no disponible"
-
-
-
-
-'''class Smartphone(Producte):
-    def __init__(self, camara, bateria):
-        self.camara = camara
-        self.bateria = bateria
-    super().__init_
-
-
-class CarretCompra:
-
