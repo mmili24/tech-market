@@ -5,8 +5,7 @@ class Smartphone(Producte):
         super().__init__(nom, preu, stock)
         self.camara = camara
 
-   ''' def get_preu_impost(self):
-        preu_web_iva = super().get_preu_web
+    def get_preu_web(self):
+        preu_web_iva = super().get_preu_web()
+        return preu_web_iva + 5
 
-        return preu_web_iva 
-    '''
