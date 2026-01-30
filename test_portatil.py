@@ -9,3 +9,6 @@ class TestPortatil(unittest.TestCase):
         portatil = Portatil("MacBook", 1000, 5, ram, cpu)
         self.assertEqual(ram, portatil.ram)
         self.assertEqual(cpu, portatil.processador)
+
+if __name__ == '__main__':
+    unittest.main()
