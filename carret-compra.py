@@ -34,3 +34,4 @@ class Smartphone(Producte):
         return f"PORTÀTIL:{self.nom} | ramGB {self.ram} | {self.cpu}"
 
 class CarretCompra:
+
