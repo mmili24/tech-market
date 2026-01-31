@@ -13,7 +13,8 @@ TechMarket/
 ├── portatil.py           # Classe Portatil (hereda de Producte)
 ├── smartphone.py         # Classe Smartphone (hereda de Producte)
 ├── carret_compra.py      # Classe CarretCompra per gestionar compres
-└── test_carret_compra.py # Tests unitaris
+└── test_carret_compra.py # Tests
+```
 
 ## ️ Tecnologies
 - Python 3.10
