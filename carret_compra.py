@@ -1,15 +1,23 @@
-'''## La base del catàleg
+'''## El carret de Compra
+L'usuari navega per la web i va afegint coses al carret. 
+Necessitem una classe que gestioni una llista d'objectes heterogenis 
+(barreja de mòbils i portàtils).
+Hem de crear una classe carret compra que pugui afegir productes i 
+ens permeti poder mostrar el total a pagar.'''
 
-Una web no pot mostrar productes si no tenen una estructura definida. 
-Hem de crear una "plantilla" de qualsevol producte que es vengui a la nostra web.
+from producte import Producte
+from portatil import Portatil
+from smartphone import Smartphone
 
-Per poder instanciar un producte necessitarem el nom, el preu i l'stock del mateix.
-Necessitem per la seguretat del nostre e-commerce que el preu estigui encapsulat, 
-tot pensant en que cap programador junior que toqui el nostre codi pugui accedir-hi
-i introduir un preu negatiu per error.
+class CarretCompra:
+  def __init__(self):
+      self.lista_productes = []
 
-A la web mostrarem el preu dels productes, però hem de tenir en compte he quan ho 
-mostrem ho hem de fer amb l'IVA (21%) aplicat.
+  def afegir(self, producte):
+      self.lista_productes.append(producte)
 
-Si al vendre un producte no hi ha prou stock, s'ha de llançar un error o avisar 
-del mateix.'''
+  '''def checkout(self):
+      total = 0
+      for producte in self.lista_productes:
+          total = total + producte.get_preu_web()
+      return f"\n--- TIQUET DE COMPRA ---\n- #y mas cosas aqui'''
