@@ -15,9 +15,12 @@ class CarretCompra:
 
   def afegir(self, producte):
       self.lista_productes.append(producte)
-
-  '''def checkout(self):
+          
+  def checkout(self):
+      result = f"\n--- TIQUET DE COMPRA ---\n"
       total = 0
       for producte in self.lista_productes:
-          total = total + producte.get_preu_web()
-      return f"\n--- TIQUET DE COMPRA ---\n- #y mas cosas aqui'''
+          total = total + producte.llegir_preu()
+          result = result + f"- {producte.nom}: {producte.llegir_preu()}€\n"    
+      result = result + f"------------------------\nTOTAL A PAGAR: {total}€"
+      return result

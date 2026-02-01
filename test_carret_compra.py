@@ -17,7 +17,7 @@ class TestCarretCompra(unittest.TestCase):
         iphone = Smartphone('iPhone', 1000, 10, '48MP')
         carret.afegir(mac)
         carret.afegir(iphone)
-        result = "\n--- TIQUET DE COMPRA ---\n- MackBook: 1000€\n- iPhone: 1000€\n------------------------\nTOTAL A PAGAR: 2000€"
+        result = "\n--- TIQUET DE COMPRA ---\n- MacBook: 1000€\n- iPhone: 1000€\n------------------------\nTOTAL A PAGAR: 2000€"
         self.assertEqual(result, carret.checkout())
 
 if __name__ == '__main__':
